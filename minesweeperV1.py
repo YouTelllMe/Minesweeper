@@ -211,7 +211,7 @@ if boardsize != "end":
                         board[y-1,x-1] = solution[y-1,x-1]
                 printboard(board,xaxis)
                 if n>0:
-                    print("GG, you fucked! Thanks for playing!")
+                    print("You've stepped on a bomb! Thanks for playing!")
                     break
             except:
                 print ("Format Error: Invalid dimensions\n")
@@ -229,7 +229,7 @@ if boardsize != "end":
                     y,x = int(choice[0]), int(choice[1])
                     if solution[y-1,x-1] == "B":
                         board[y-1,x-1] = "B"
-                        print("GG, you fucked! Thanks for playing!")
+                        print("You've stepped on a bomb! Thanks for playing!")
                         break
                     elif solution[y-1,x-1] == "0":
                         board[y-1,x-1] = solution[y-1,x-1]
